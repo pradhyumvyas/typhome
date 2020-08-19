@@ -10,14 +10,16 @@ function addItem() {
     alert("Enter the Text First");
   } else {
 
-    if (arr1.includes(inputdata)){
+    if (arr1.includes(inputdata)) {
       alert("News are already there")
     } 
-    else{
+    else {
       li.setAttribute("id", inputdata);
       li.appendChild(document.createTextNode(inputdata));
       lists.appendChild(li);
       arr1.push(inputdata);
     }
   }
+  document.getElementById("inputdata").value = '';
+
 }
