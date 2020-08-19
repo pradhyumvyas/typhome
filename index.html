@@ -52,6 +52,7 @@
     </ul>
     
   </div>
+  <!-- rhs -->
   <div class="card-details">
     <h1>Latest Updates</h1>  
     <div class="card_info" style="height: 240px;">
@@ -67,13 +68,15 @@
         </div>
     </div> 
   </div>
-  <div class="input-field">
+  <!-- inputfield -->
+  <div class="input-field" >
+    <center><h2>Update News</h2></center>
     <textarea type="text" id="inputdata" placeholder="Enter the text here" ></textarea>
 
   <div class="button">
    <center> <button
-      type="button"
-      onclick="addItem()"
+      
+      onclick="addItem(inputdata.value)"
       style="background: rgb(0, 110, 0);"
     >
       Add News
@@ -88,7 +91,7 @@
 </div>
 
 <!-- section 3 -->
-    <div id="section3" style="margin-top: 40px;">
+    <div id="section3" style="margin-top: 70px;">
       <center>
         <h1 style="color: black;">
           Our Mavericks Fellowers
